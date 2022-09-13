@@ -1,1 +1,2 @@
-Cp -nu* .html ..
+#!/bin/bash
+cp *.html ../
