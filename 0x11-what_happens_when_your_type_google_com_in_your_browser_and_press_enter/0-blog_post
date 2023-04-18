@@ -1,0 +1,100 @@
+What happens when you type google.com in your browser and press Enter
+=====================================================================
+
+![An image describing enter touch on a keyboard](https://miro.medium.com/max/1400/1*1NuSjTdxAYYaYiLjeP3avg.jpeg)
+
+Enter key on a keyboard
+
+> Being a Full-Stack Software Engineer means you're comfortable interacting with any layer of the stack.
+>
+> A way to easily assess this is to simply ask an engineer to explain how a software system works. They can have a general overview of the flow or can choose to dig deep in a certain area.
+
+> Let's practice by exploring the infrastructure side (network, servers, security...) of the question.
+
+Terminology
+===========
+
+It would be a harm to go further without defining essential key concepts to our topic: server, network protocol, client, http/https, dns, firewall, proxy, tls/ssl, tcp/udp...
+
+-   **Server**
+
+In [computing](https://en.wikipedia.org/wiki/Computing), a **server** is a piece of [computer](https://en.wikipedia.org/wiki/Computer) hardware or software ([computer program](https://en.wikipedia.org/wiki/Computer_program)) that provides functionality for other programs or devices, called "[clients](https://en.wikipedia.org/wiki/Client_(computing))".
+
+-   **Client**
+
+In [computing](https://en.wikipedia.org/wiki/Computing), a **client** is a piece of [computer hardware](https://en.wikipedia.org/wiki/Computer_hardware) or [software](https://en.wikipedia.org/wiki/Software) that accesses a service made available by a [server](https://en.wikipedia.org/wiki/Server_(computing)) as part of the [client--server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) of [computer networks](https://en.wikipedia.org/wiki/Computer_network).
+
+-   **Network Protocol**
+
+A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network.
+
+--- HTTP ---
+
+Hypertext Transfer Protocol (HTTP) is an application layer protocol used to transmit hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers but can also be used for other purposes.
+
+--- HTTPS ---
+
+HTTPS (Hypertext Transfer Protocol Secure or secure hypertext transfer protocol) is an Internet communication protocol that protects the integrity and confidentiality of data during the transfer of information between the Internet user's computer and the site.
+
+--- DNS ---
+
+Domain name system (DNS) is the system that is used to translate human-memorable domain names like namecheap.com and hostnames like support.namecheap.com into the corresponding numeric Internet Protocol (IP) addresses as well as to identify and locate computer systems and resources on the Internet.
+
+---TLS / SSL ---
+
+**Transport Layer Security** (**TLS**) is a [cryptographic protocol](https://en.wikipedia.org/wiki/Cryptographic_protocols) designed to provide communications security over a computer network. The [protocol](https://en.wikipedia.org/wiki/Communication_protocol) is widely used in applications such as [email](https://en.wikipedia.org/wiki/Email), [instant messaging](https://en.wikipedia.org/wiki/Instant_messaging), and [voice over IP](https://en.wikipedia.org/wiki/Voice_over_IP), but its use in securing [HTTPS](https://en.wikipedia.org/wiki/HTTPS) remains the most publicly visible.
+
+**. Proxy**
+
+In [computer networking](https://en.wikipedia.org/wiki/Computer_networking), a **proxy server** is a [server application](https://en.wikipedia.org/wiki/Server_application) that acts as an [intermediary](https://en.wikipedia.org/wiki/Intermediary) between a [client](https://en.wikipedia.org/wiki/Client_(computing)) requesting a [resource](https://en.wikipedia.org/wiki/Web_resource) and the server providing that resource.
+
+**. Load Balancing**
+
+In [computing](https://en.wikipedia.org/wiki/Computing), **load balancing** refers to the process of distributing a set of [tasks](https://en.wikipedia.org/wiki/Task_(computing)) over a set of [resources](https://en.wikipedia.org/wiki/System_resource) (computing units), with the aim of making their overall processing more efficient.
+
+**Scenario**
+============
+
+> Done with key concepts ? It is time to follow step-by-step what happens from the moment we type *enter to the moment we see the response of google.*
+
+We are going to walk through 8 defined steps which are detailed as follow:
+
+1- URL Parsing
+
+2- DNS Lookup
+
+3- TCP / IP
+
+4- SSL
+
+5- HTTPS
+
+6- Load Balancer
+
+7- Firewall
+
+8- Host Server
+
+9- Page rendering
+
+1- URL Parsing
+==============
+
+![](https://miro.medium.com/max/1276/1*oz1W26rGL77Hso_STfQEXg.png)
+
+URL parsing
+
+URL parsing is a function of traffic management and load-balancing products that scan URLs to determine how to forward traffic across different links or into different servers. A URL includes a protocol identifier (http, for Web traffic) and a resource name, such as [www.microsoft.com](http://www.microsoft.com/).
+
+2- DNS Lookup
+=============
+
+A DNS lookup, in a general sense, is the process by which a DNS record is returned from a DNS server. This is like looking up a phone number in a phone book --- that is why it is referred to as a "lookup". Interconnected computers, servers and smart phones need to know how to translate the email addresses and domain names people use into meaningful numerical addresses. A DNS lookup performs this function.
+
+![](https://miro.medium.com/max/1400/1*yfKwsrIgreeB02WLsF0dwg.jpeg)
+
+DNS Lookup journey
+
+So, what exactly happened after I hit the Enter key?
+
+1.  My **browser** looks at its DNS cache to see if it'd been there before and knew the IP address mapped to it. Let's say it didn't.
